@@ -19,3 +19,6 @@ class Bloc extends Object with Validators {
     _password.close();
   }
 }
+
+// Adding Bloc instance
+final bloc = Bloc();
