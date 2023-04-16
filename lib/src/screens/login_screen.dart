@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
           decoration: InputDecoration(
             hintText: 'you@example.com',
             labelText: 'Email Address',
-            errorText: snapshot.error.toString(),
+            errorText: snapshot.hasError ? snapshot.error.toString() : null,
           ),
         );
       },
@@ -49,7 +49,7 @@ class LoginScreen extends StatelessWidget {
           decoration: InputDecoration(
             hintText: 'Password',
             labelText: 'Password',
-            errorText: snapshot.error.toString(),
+            errorText: snapshot.hasError ? snapshot.error.toString() : null,
           ),
         );
       },
