@@ -20,4 +20,4 @@ class Bloc extends Object with Validators {
 }
 
 // Adding Bloc instance
-final bloc = Bloc();
+// final bloc = Bloc();
