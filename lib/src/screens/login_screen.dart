@@ -56,16 +56,14 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
+  // check if both email and password stream meets requirement, then calls
+  // the submit function
   Widget submitButton(Bloc bloc) {
     return StreamBuilder(
       stream: bloc.submitValid,
       builder: (context, snapshot) {
         return ElevatedButton(
-          onPressed: snapshot.hasData
-              ? () {
-                  print('Hi there!');
-                }
-              : null,
+          onPressed: snapshot.hasData ? bloc.submit : null,
           child: const Text('Login'),
         );
       },
