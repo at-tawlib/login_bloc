@@ -1,16 +1,8 @@
-# login_bloc
+# Basic Login app with BLOC module and RxDart
+(Dart and Flutter: The Complete Developer's Guide Tutorials by Stephen Grider)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- We use blocs instead of StatefulWidgets to share information around our app
+- We can use bloc either as a single global instance or with scoped instance
+- Blocs use sinks and streams to work with information
+- Widgets use StreamBuilders to change their contents depending on values coming through a stream
+- The RxDart library is extremely useful in the vast majority of apps
